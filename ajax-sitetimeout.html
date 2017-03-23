@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AJAX asynchronous setTimeOut example</title>
+  </head>
+  <h3>Open inspector tool in your web browser and check the output in console.</h3>
+  <p>Output will be :-</p>
+  <ul>
+    <li>First Task</li>
+    <li>Third Task</li>
+    <li>Second Task</li>
+  </ul>
+  <body>
+    <script>
+    // asynchronous
+    console.log('First Task');
+    setTimeout(function(){
+       console.log('Second Task');
+    }, 2000);
+
+    console.log('Third Task');
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AJAX synchronous example</title>
+  </head>
+  <h3>Open inspector tool in your web browser and check the output in console.</h3>
+  <p>Output will be :-</p>
+  <ul>
+    <li>First Task</li>
+    <li>Second Task</li>
+    <li>Third Task</li>
+    <li>Fourth Task</li>
+    <li>Fifth Task</li>
+    <li>Sixth Task</li>
+  </ul>
+  <body>
+    <script>
+
+    console.log('First Task');
+    console.log('Second Task');
+    console.log('Third Task');
+
+    function x(){
+      console.log('Fourth Task');
+    }
+    function y(){
+      x();
+      console.log('Fifth Task');
+    }
+    function z(){
+      y();
+      console.log('Sixth Task');
+    }
+    z();
+    </script>
+  </body>
+</html>
